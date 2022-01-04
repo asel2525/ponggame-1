@@ -56,11 +56,11 @@ public class Pong extends Application {
 	private void run(GraphicsContext gc) {
 		//set graphics
 		//set background color
-		gc.setFill(Color.BLACK);
+		gc.setFill(Color.GREY);
 		gc.fillRect(0, 0, width, height);
 		
 		//set text
-		gc.setFill(Color.WHITE);
+		gc.setFill(Color.BLACK);
 		gc.setFont(Font.font(25));
 		
 		if(gameStarted) {
@@ -81,7 +81,7 @@ public class Pong extends Application {
 			//set the start text
 			gc.setStroke(Color.WHITE);
 			gc.setTextAlign(TextAlignment.CENTER);
-			gc.strokeText("Click", width / 2, height / 2);
+			gc.strokeText("You Can Start", width / 2, height / 2);
 			
 			//reset the ball start position 
 			ballXPos = width / 2;
